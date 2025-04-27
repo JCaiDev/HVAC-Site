@@ -1,0 +1,82 @@
+:root {
+  --brand-primary: #0a6579;
+  --brand-secondary: #484848;
+  --brand-accent: #f99e15;
+  --brand-light: rgb(245, 245, 245);
+  --font-title: "Red Hat Display", sans-serif;
+  --font-body: "Albert Sans", sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  font-weight: 400;
+}
+
+h2 {
+  font-family: var(--font-title);
+  font-weight: 700;
+}
+
+h1 {
+  font-family: var(--font-title);
+  font-weight: 900;
+}
+
+.top-bar-icon {
+  color: var(--brand-primary);
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+.icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 3px solid #000000;
+}
+
+.btn-accent {
+  background-color: var(--brand-accent);
+  border: none;
+  padding: 10px 24px;
+  border-radius: 0;
+  white-space: nowrap;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+}
+
+#navigation {
+  background-color: var(--brand-primary);
+  font-weight: bold;
+  color: white;
+}
+
+.bg-brand-primary {
+  background-color: var(--brand-primary);
+}
+
+.bg-brand-light {
+  background-color: var(--brand-light);
+}
+
+.bg-brand-secondary {
+  background-color: var(--brand-secondary);
+}
+
+.repair {
+  color: var(--brand-primary);
+}
+
+.icon-container {
+  width: 5rem;
+}
+
+.mail-icon,
+.phone-icon {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
+  font-size: 2.25rem;
+}

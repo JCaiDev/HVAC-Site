@@ -106,6 +106,29 @@ const buildNavigation = async () => {
   }
 };
 
+//Branch Locator Script
+
+const branchLocator = () => {
+  const buttons = document.querySelectorAll("#branch-locator button");
+  const iframe = document.getElementById("map");
+
+  let activeButton = buttons[0];
+  iframe.src = activeButton.getAttribute("data-iframe-src");
+
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+      if (button !== activeButton) {
+        activeButton.classList.remove("active");
+        button.classList.add("active");
+
+        activeButton = button;
+        iframe.src = button.getAttribute("data-iframe-src");
+      }
+    });
+  });
+};
+
 document.addEventListener("DOMContentLoaded", () => {
   buildNavigation();
+  branchLocator();
 });

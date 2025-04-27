@@ -2,25 +2,22 @@ const buildNavigation = async () => {
   // Please fetch and use the data found in https://cdn.searchkings.ca/public-asset/js/test.json to build the navigation
 
   try {
-    //fetch JSON data
     const response = await fetch(
       "https://cdn.searchkings.ca/public-asset/js/test.json"
     );
     const data = await response.json();
 
-    //Sort nav-items by order
+    //Sorting the nav-items by "order"
     let navItems = data.navigation.sort((a, b) => a.order - b.order);
 
     navItems = navItems.filter((item) => item.label !== "Home");
 
-    //find nav
     const nav = document.getElementById("navigation");
-    nav.classList.add("navbar", "navbar-expand-md", "navbar-dark");
 
     const container = document.createElement("div");
     container.classList.add("container-fluid");
 
-    //Bootstrap create toggle button
+    //Creating bootstrap toggle button
     const toggleButton = document.createElement("button");
     toggleButton.classList.add("navbar-toggler");
     toggleButton.setAttribute("type", "button");
@@ -42,7 +39,6 @@ const buildNavigation = async () => {
     const ul = document.createElement("ul");
     ul.classList.add("navbar-nav", "mx-auto", "gap-5");
 
-    //Loop through each nav item
     navItems.forEach((item) => {
       const li = document.createElement("li");
       li.classList.add("nav-item", "text-light");

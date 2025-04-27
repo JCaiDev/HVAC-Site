@@ -3,6 +3,7 @@
   --brand-secondary: #484848;
   --brand-accent: #f99e15;
   --brand-light: rgb(245, 245, 245);
+  --brand-white: white;
   --font-title: "Red Hat Display", sans-serif;
   --font-body: "Albert Sans", sans-serif;
 }
@@ -52,7 +53,7 @@ h1 {
 #navigation {
   background-color: var(--brand-primary);
   font-weight: bold;
-  color: white;
+  color: var(--brand-white);
 }
 
 .bg-brand-primary {
@@ -79,4 +80,18 @@ h1 {
 .phone-icon {
   font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
   font-size: 2.25rem;
+}
+
+#branch-locator button.active {
+  background-color: var(--brand-primary);
+  color: var(--brand-white);
+}
+
+#branch-locator iframe {
+  width: 100%;
+  height: 50vh;
+}
+
+.btn-brand-primary {
+  background-color: var(--brand-primary);
 }

@@ -38,7 +38,7 @@ const generateNavDropdown = (item) => {
 const generateNavItem = (item) => {
   return `
     <li>
-      <a class="nav-link text-white href="${item.url}">
+      <a class="nav-link text-white" href="${item.url}">
         ${item.label}
       </a>
     </li>

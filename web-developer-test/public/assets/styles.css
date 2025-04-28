@@ -141,3 +141,29 @@ h1 {
 .services-emergency {
   background: linear-gradient(90deg, #f5f5f5 50%, white 50%);
 }
+
+.chat-icon {
+  bottom: 3.75rem;
+  right: 3.75rem;
+  color: var(--brand-accent);
+  width: 30px;
+  height: 30px;
+}
+
+.btn-chat {
+  background-color: var(--brand-primary);
+  border: none;
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.btn-chat:hover {
+  background-color: #55b0c5;
+}

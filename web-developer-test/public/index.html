@@ -40,11 +40,14 @@
           <!-- location button -->
           <div class="col-lg-2">
             <div class="top-contact-item d-flex align-items-center mb-2">
-              <div class="icon-wrapper me-2">
-                <span class="material-symbols-outlined top-bar-icon"
-                  >pin_drop</span
-                >
-              </div>
+              <a href="#branch-locator" class="text-decoration-none">
+                <div class="icon-wrapper me-2">
+                  <span class="material-symbols-outlined top-bar-icon"
+                    >pin_drop</span
+                  >
+                </div>
+
+              </a>
               <div>
                 <p class="fw-bolder mb-0 location-font">Location</p>
                 <p class="fw-bold mb-0 subline-font">Subline</p>
@@ -221,6 +224,25 @@
         </div>
       </div>
     </section>
+
+    <!-- Bonus Feature: support chat button (mock up only)  -->
+    
+    <button class="btn btn-chat rounded-circle" type="button" data-bs-toggle="offcanvas" data-bs-target="#chat-window" aria-controls="chat-canvas">
+      <span class="material-symbols-outlined chat-icon">support_agent</span>
+    </button>
+
+    <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="chat-window" aria-labelledby="chat-window-label">
+      <div class="offcanvas-header">
+        <h2 class="offcanvas-title" id="chat-window-label">Live Chat</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <p>Hello! How can I help you today?</p>
+        </div>
+    </div>
+
+    
+
     
     <footer>
       <div class="container-fluid bg-black text-white p-2 d-flex align-items-center justify-content-center">

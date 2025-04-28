@@ -13,6 +13,13 @@ body {
   font-weight: 400;
 }
 
+h3,
+h4,
+h5 {
+  font-family: var(--font-title);
+  font-weight: 400;
+}
+
 h2 {
   font-family: var(--font-title);
   font-weight: 700;
@@ -26,6 +33,16 @@ h1 {
 .top-bar-icon {
   color: var(--brand-primary);
   font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+.location-font {
+  font-size: 1.4rem;
+}
+.subline-font {
+  font-size: 1rem;
+}
+
+.hero-title {
+  font-size: 3rem;
 }
 
 .icon-wrapper {
@@ -45,9 +62,13 @@ h1 {
   padding: 10px 24px;
   border-radius: 0;
   white-space: nowrap;
-  font-weight: bold;
   transition: background-color 0.3s ease;
   font-size: 1rem;
+  font-family: var(--font-title);
+}
+
+.btn-accent:hover {
+  background-color: #b17010;
 }
 
 #navigation {
@@ -70,6 +91,18 @@ h1 {
 
 .repair {
   color: var(--brand-primary);
+  font-size: 2.5rem;
+}
+
+.service-font {
+  font-size: 3.75rem;
+}
+.condition-font {
+  font-size: 0.5rem;
+}
+
+.branch-font {
+  font-size: 3.75rem;
 }
 
 .icon-container {
@@ -89,9 +122,22 @@ h1 {
 
 #branch-locator iframe {
   width: 100%;
-  height: 50vh;
+  height: 40vh;
 }
 
 .btn-brand-primary {
   background-color: var(--brand-primary);
+}
+
+.card-icon-container {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.services-emergency {
+  background: linear-gradient(90deg, #f5f5f5 50%, white 50%);
 }

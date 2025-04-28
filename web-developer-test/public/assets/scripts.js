@@ -128,3 +128,5 @@ document.addEventListener("DOMContentLoaded", () => {
   buildNavigation();
   branchLocator();
 });
+
+document.getElementById("current-year").innerText = new Date().getFullYear();

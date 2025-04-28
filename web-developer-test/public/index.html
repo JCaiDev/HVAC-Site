@@ -31,29 +31,29 @@
     <!-- Top Bar -->
     <div class="top-bar" id="home">
       <div class="container py-3 px-2">
-        <div class="row align-items-center">
+        <div class="row justify-content-around align-items-center">
           <div class="col-lg-4 col-md-12 my-3">
             <a href="#home">
               <img src="assets/images/logo.svg" alt="HVAC Logo" />
             </a>
           </div>
           <!-- location button -->
-          <div class="col-lg-2 col-md-4">
-            <div class="top-contact-item d-flex align-items-center">
+          <div class="col-lg-2">
+            <div class="top-contact-item d-flex align-items-center mb-2">
               <div class="icon-wrapper me-2">
                 <span class="material-symbols-outlined top-bar-icon"
                   >pin_drop</span
                 >
               </div>
               <div>
-                <h5 class="fw-bolder mb-0">Location</h5>
-                <h6 class="mb-0">Subline</h6>
+                <p class="fw-bolder mb-0 location-font">Location</p>
+                <p class="fw-bold mb-0 subline-font">Subline</p>
               </div>
             </div>
           </div>
           <!-- call us now -->
-          <div class="col-lg-3 col-md-4">
-            <div class="top-contact-item d-flex align-items-center">
+          <div class="col-lg-3">
+            <div class="top-contact-item d-flex align-items-center mb-2">
               <div class="icon-wrapper me-2">
                 <span class="material-symbols-outlined top-bar-icon">call</span>
               </div>
@@ -64,7 +64,7 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-4 text-md-end">
+          <div class="col-lg-3 ">
             <button class="btn btn-accent fw-bold">
               24/7 EMERGENCY SERVICE
             </button>
@@ -81,40 +81,45 @@
     <section class="hero-section">
 
       <div class="container-fluid p-0">
-        <div class="row g-0">
-          <div class="col-lg-6">
-            <img
-              src="assets/images/parallax-img-trane.svg"
-              alt="Technician"
-              class="img-fluid w-100"
-            />
-          </div>
-          <div class="col-lg-6 bg-brand-light d-flex align-items-center">
-            <div class="px-5 py-2 ">
+          <div class="row g-0">
+            <div class="col-lg-6">
+              <img
+                src="assets/images/parallax-img-trane.svg"
+                alt="Technician"
+                class="img-fluid w-100"
+              />
+            </div>
+            <div class="col-lg-6 align-items-center bg-brand-light">
+              <div class="p-3">
 
-              <h1 class="m-3" >Your Local Heating </br>
-              & Cooling Specialist</h1>
-              <p class="m-3">We provide customer experience that goes beyond the ordinary and expected.
-              </p>
-              <p class="m-3" >Our trained and certified technicians are trained to solve any heating or cooling need and stand behind our work with a 100% satisfaction guarantee.</p>
-              <button class="btn btn-accent fw-bold m-2">REQUEST A QUOTE</button>
+                <h1 class="my-3 hero-title" >Your Local Heating </br>
+                  & Cooling Specialist</h1>
+                  <p class="my-3">We provide customer experience that goes beyond the ordinary and expected.
+                  </p>
+                  <p class="my-3">Our trained and certified technicians are trained to solve any heating or cooling need and stand behind our work with a 100% satisfaction guarantee.</p>
+                  <button class="btn btn-accent fw-bold mt-">REQUEST A QUOTE</button>
+
+              </div>  
+
+              
+              
             </div>
           </div>
-        </div>
+        
       </div>
     </section>
 
-    <section id="services">
-        <div class="container py-3">
-          <h3 class="mt-2 repair">In Need of a Repair?</h3>
-          <h1 class="mt-0">Services & Solutions</h1>
+    <section id="services" >
+        <div class="container p-0 my-2">
+          <p class="mt-2 mb-0 repair">In Need of a Repair?</p>
+          <h2 class="mt-0 service-font">Services & Solutions</h2>
         </div>
 
 
         
     </section>
     
-    <section id="info" class="p-0 m-0">
+    <section class="services-emergency p-0 m-0">
       
       <div class="container">
         <div class="row">
@@ -124,22 +129,25 @@
             <div class="col-lg-4 bg-brand-primary text-white p-2">
               <p class="fw-bold mb-0">[Current Month] Repair Promotion:</p>
               <p class="mt-0 mb-0">20% discount on repairs for veterans, first responders and their families*</p>
-              <small>*Conditions</small>
+              <small class="condition-font">*Conditions</small>
             </div>
         </div>
       </div>  
     </section>
       
     <section id="solutions">
-      <div class="container py-5">
+      <div class="container my-5 p-0">
         <div class="row g-4">
           <div class="col-lg-4">
             <!-- ductless card -->
             <div class="card text-center shadow-sm h-100 p-4 bg-brand-light border-0">
               <div class="card-body">
-                <img src="assets/images/ductless.svg" alt="ductless">
+                <div class="card-icon-container">
+                  <img src="assets/images/ductless.svg" alt="ductless">
+                  
+                </div>
                 <h2 class="fw-bold my-2">Ductless</h2>
-                <h3 class="lead">Repair & Service</h3>
+                <h3 >Repair & Service</h3>
 
               </div>
             </div>
@@ -149,9 +157,14 @@
           <div class="col-lg-4">
             <div class="card text-center shadow-sm h-100 p-4 bg-brand-light border-0">
               <div class="card-body">
-                <img src="assets/images/maintenance.svg" alt="maintenace">
+                <div class="card-icon-container">
+
+                  <img src="assets/images/maintenance.svg" alt="maintenace">
+
+                </div>
+                
                 <h2 class="fw-bold my-2">Maintenance</h2>
-                <h3 class="lead">Preventative Solutions</h3>
+                <h3 class=>Preventative Solutions</h3>
 
               </div>
             </div>
@@ -169,7 +182,7 @@
               
               <div class="d-flex flex-column justify-content-center ms-2">
                 <h5 class="fw-bold">Send us a Message</h5>
-                <p class="mb-0">Unsure what you require or what system have?</p>
+                <h6 class="mb-0">Unsure what you require or what system have?</h6>
               </div>
             </div>
             <!-- call card -->
@@ -195,8 +208,8 @@
     Note: We have provided the HTML below to guide and help you in developing the code for this section.
     Hint: There are multiple options to build the functionality below and depending on your solution, you may or may not have to change the sample HTML code below to match your script. -->
     <section id="branch-locator" class="container">
-      <h1>Branch Locator</h1>
-      <div class="row">
+      <h2 class="branch-font">Branch Locator</h2>
+      <div class="row mb-4">
         <div class="col-4">
           <button
             class="active text-center w-100 rounded border-0 btn-lg p-4 mb-2"
@@ -215,17 +228,16 @@
         </div>
       </div>
     </section>
-
+    
+    <footer>
+      <div class="container-fluid bg-black text-white p-2 d-flex align-items-center justify-content-center">
+        <small class="m-0 p-2">Copyright <span>&#169;</span> <span id="current-year"></span> [Company Name]. All Rights Resevered. <span class="fw-light text-decoration-underline">Privacy Policy</span></small>
+      </div>
+    </footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/scripts.js"></script>
   </body>
 
-  <footer>
-
-    <div class="container-fluid bg-black text-white p-2 d-flex align-items-center justify-content-center">
-      <p class="m-0 p-2">Copyright <span>&#169;</span> 2023 [Company Name]. All Rights Resevered. <span class="fw-light text-decoration-underline">Privacy Policy</span></p>
-    </div>
-  </footer>
 </html>

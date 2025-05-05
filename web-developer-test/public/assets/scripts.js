@@ -109,7 +109,10 @@ const branchLocator = () => {
   const buttons = document.querySelectorAll("#branch-locator button");
   const iframe = document.getElementById("map");
 
+  if (!buttons.length || !iframe) return;
+
   let activeButton = buttons[0];
+  activeButton.classList.add("active");
   iframe.src = activeButton.getAttribute("data-iframe-src");
 
   buttons.forEach((button) => {
@@ -118,8 +121,8 @@ const branchLocator = () => {
         activeButton.classList.remove("active");
         button.classList.add("active");
 
-        activeButton = button;
         iframe.src = button.getAttribute("data-iframe-src");
+        activeButton = button;
       }
     });
   });
